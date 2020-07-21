@@ -30,6 +30,7 @@ a {
 	padding: 20px;
 	border-radius: 10px;
 	transition: all 0.3s ease;
+	margin-bottom: 20px;
 }
 
 .chat-button:hover {
@@ -829,6 +830,7 @@ main .main-content {
 
 	.boost-container img {
 		width: 100%;
+		margin-top: 25px;
 	}
 
 	/* FEATURES SECTION */
@@ -842,6 +844,7 @@ main .main-content {
 	.features {
 		grid-template-rows: 1fr 1fr 1fr 1fr;
 		grid-template-columns: 1fr;
+		margin-top: 100px;
 	}
 
 	/* FOOTER SECTION */
@@ -875,13 +878,13 @@ main .main-content {
 
 	.footer-section .footer-submain p {
 		font-size: 0.5rem;
-		align-self: center;
 		margin-bottom: 15px;
 	}
 
 	.footer-section .footer-submain img {
 		width: 20px;
-		margin-bottom: 15px;
+		height: 20px;
+		margin-bottom: 0px;
 	}
 
 	.footer-section .footer-bg {
