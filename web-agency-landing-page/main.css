@@ -29,10 +29,53 @@ a {
 	background: #3b23cf;
 	padding: 20px;
 	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+.chat-button:hover {
+	background: #6151ca;
 }
 
 ul li {
 	color: black;
+}
+
+.img-animation {
+	animation-name: image;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+.container-animation {
+	animation-name: container;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+/* ANIMATIONS */
+
+@keyframes image {
+	from {
+		transform: skew(90deg);
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+		transform: skew(0deg);
+	}
+}
+
+@keyframes container {
+	from {
+		transform: translateX(10px);
+	}
+
+	to {
+		transform: translateX(-10px);
+	}
 }
 
 /* TEXT STYLES */
@@ -152,6 +195,19 @@ ul li {
 	background: #3b23cf;
 	padding: 15px;
 	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+.navigation ul .button:hover {
+	background: #6151ca;
+}
+
+.navigation ul .text {
+	transition: all 0.3s ease;
+}
+
+.navigation ul .text:hover {
+	transform: scale(1.1);
 }
 
 /* HERO SECTION */
@@ -180,6 +236,11 @@ main a {
 	border-radius: 10px;
 	width: max-content;
 	margin-top: 25px;
+	transition: all 0.3s ease;
+}
+
+main a:hover {
+	background: #6151ca;
 }
 
 main .main-content {
@@ -330,6 +391,7 @@ main .main-content {
 
 .reviews-content div p {
 	width: 80%;
+	max-width: 220px;
 	align-self: center;
 }
 
@@ -405,6 +467,11 @@ main .main-content {
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.newsletter-section .newsletter-content button:hover {
+	background: #6151ca;
 }
 
 .newsletter-section .newsletter-content input {
@@ -468,6 +535,7 @@ main .main-content {
 	position: relative;
 	margin-top: 200px;
 	padding-top: 20px;
+	width: 100%;
 }
 
 .footer-section .footer-main {
@@ -531,9 +599,48 @@ main .main-content {
 	height: 100%;
 	background: url(img/footer-bg.svg) rgba(240, 240, 255, 0.5) no-repeat;
 	background-position: bottom;
+	background-size: cover;
 	top: 0;
 	left: 0;
 	z-index: -1;
+}
+
+/* EXCLUSIVE MEDIA */
+
+@media screen and (max-width: 1024px) {
+	/* REVIEWS SECTION */
+
+	.reviews-section h2 {
+		margin: 50px 0px;
+	}
+
+	.reviews-content {
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+		margin-top: 50px;
+	}
+
+	.reviews-content div p {
+		width: 40%;
+	}
+
+	.reviews-content .names-content {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.names {
+		width: auto;
+		text-align: center;
+	}
+
+	.reviews-content .names-content .job {
+		margin-left: 0px;
+	}
+
+	.reviews-content .item {
+		margin: 30px 20px;
+	}
 }
 
 /* TABLET RESPONSIVE MEDIAS */
@@ -607,40 +714,6 @@ main .main-content {
 
 	.features-section .features-cover {
 		padding-right: 0px;
-	}
-
-	/* REVIEWS SECTION */
-
-	.reviews-section h2 {
-		margin: 50px 0px;
-	}
-
-	.reviews-content {
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-template-columns: 1fr;
-		margin-top: 50px;
-	}
-
-	.reviews-content div p {
-		width: 40%;
-	}
-
-	.reviews-content .names-content {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.names {
-		width: auto;
-		text-align: center;
-	}
-
-	.reviews-content .names-content .job {
-		margin-left: 0px;
-	}
-
-	.reviews-content .item {
-		margin: 30px 20px;
 	}
 
 	/* NEWSLETTER SECTION */
@@ -799,9 +872,24 @@ main .main-content {
 		width: 85%;
 		margin: 0 auto 0 auto;
 	}
+
+	.footer-section .footer-submain p {
+		font-size: 0.5rem;
+		align-self: center;
+		margin-bottom: 15px;
+	}
+
+	.footer-section .footer-submain img {
+		width: 20px;
+		margin-bottom: 15px;
+	}
+
+	.footer-section .footer-bg {
+		background-size: initial;
+	}
 }
 
-/* EXCLUSIVE MEDIAS */
+/* EXCLUSIVE MEDIA */
 @media screen and (max-width: 400px) {
 	/* REVIEWS SECTION */
 
