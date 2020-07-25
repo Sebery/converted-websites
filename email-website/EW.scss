@@ -25,6 +25,11 @@
 			a {
 				color: $secondary-text-color;
 				font-weight: font-w(medium);
+				@include transition-ease();
+
+				&:hover {
+					color: $secondary-light-text-color;
+				}
 			}
 		}
 	}
@@ -34,7 +39,7 @@
 		background-size: cover;
 
 		div {
-			@include bg-opacity($terciary-yellow-color, 0.3);
+			@include bg-opacity($terciary-yellow-color, 0.7);
 			width: 100%;
 			height: calc(100vh - 90px);
 			display: flex;
@@ -44,7 +49,12 @@
 
 			a {
 				@include black-button();
+				@include transition-ease();
 				margin-top: 50px;
+
+				&:hover {
+					background: $primary-light-dark-color;
+				}
 			}
 
 			h3 {
@@ -82,6 +92,10 @@
 			}
 		}
 
+		p {
+			color: $gray-text-color;
+		}
+
 		h2 {
 			margin: 15px 0px 0px 0px;
 			font-weight: font-w(semibold);
@@ -91,6 +105,11 @@
 			display: inline-block;
 			margin-top: 15px;
 			@include alt-black-button();
+			@include transition-ease();
+
+			&:hover {
+				background: $secondary-light-text-color;
+			}
 		}
 	}
 
@@ -126,6 +145,11 @@
 		a {
 			@include yellow-button();
 			margin-top: 40px;
+			@include transition-ease();
+
+			&:hover {
+				background: $terciary-light-yellow-color;
+			}
 		}
 	}
 }
@@ -157,6 +181,10 @@
 				text-align: left;
 				width: 50%;
 				margin: 0 auto;
+
+				p {
+					color: $gray-text-color;
+				}
 			}
 
 			h2 {
@@ -208,6 +236,7 @@ footer {
 
 			p {
 				align-self: flex-end;
+				color: $secondary-text-color;
 			}
 		}
 

@@ -58,29 +58,40 @@
 	/* DEMO SECTION */
 	.demo-container {
 		.content {
-			flex-direction: column; /**/
+			flex-direction: column;
 
 			.info {
-				width: 100%; /**/
-				flex-basis: 100%; /**/
+				width: 100%;
+				flex-basis: 100%;
 
 				.second-content {
-					align-items: center; /**/
-					text-align: center; /**/
-					width: 100%; /**/
-					padding: 0px 15px; /**/
+					align-items: center;
+					text-align: center;
+					width: 100%;
+					padding: 0px 15px;
 				}
 			}
 		}
 
 		img {
-			order: 1; /**/
-			margin: 20px auto; /**/
-			width: 100%; /**/
+			order: 1;
+			margin: 20px auto;
+			width: 100%;
 		}
 
 		.no-margin {
 			margin: 20px auto 0px auto;
+		}
+	}
+
+	/* FOOTER */
+	footer {
+		.content {
+			flex-direction: column;
+
+			div {
+				margin-top: 20px;
+			}
 		}
 	}
 }

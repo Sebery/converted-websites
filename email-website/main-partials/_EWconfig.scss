@@ -70,3 +70,8 @@ a {
 		@content;
 	}
 }
+
+/* ANIMATIONS AND TRANSITIONS */
+@mixin transition-ease {
+	transition: all 0.3s ease;
+}

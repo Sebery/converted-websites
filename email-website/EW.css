@@ -22,6 +22,7 @@ a {
 /* COLORS OPACITY */
 /* BUTTONS */
 /* RESPONSIVE MEDIAS */
+/* ANIMATIONS AND TRANSITIONS */
 /* BACKGROUND COLORS */
 /* TEXT COLORS */
 /* OTHERS */
@@ -49,7 +50,7 @@ a {
 }
 
 .header-container .nav-container {
-  background: #000;
+  background: #24242c;
   height: 90px;
   padding: 20px 0;
 }
@@ -74,8 +75,14 @@ a {
 }
 
 .header-container .nav-container div a {
-  color: gray;
+  color: #5c5d61;
   font-weight: 450;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.header-container .nav-container div a:hover {
+  color: #7c7e83;
 }
 
 .header-container .cover-container {
@@ -84,7 +91,7 @@ a {
 }
 
 .header-container .cover-container div {
-  background: rgba(255, 165, 0, 0.3);
+  background: rgba(224, 173, 47, 0.7);
   width: 100%;
   height: calc(100vh - 90px);
   display: -webkit-box;
@@ -104,17 +111,23 @@ a {
 
 .header-container .cover-container div a {
   color: #fff;
-  background: #000;
+  background: #24242c;
   padding: 15px 35px;
   border-radius: 10px;
   border: 2px solid #fff;
   word-spacing: 4px;
   font-weight: 450;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   margin-top: 50px;
 }
 
+.header-container .cover-container div a:hover {
+  background: #353541;
+}
+
 .header-container .cover-container div h3 {
-  color: #000;
+  color: #24242c;
   margin-top: 25px;
   font-weight: 400;
 }
@@ -149,8 +162,12 @@ a {
 }
 
 .products-container .product .location-container i {
-  color: orange;
+  color: #e0ad2f;
   margin-right: 10px;
+}
+
+.products-container .product p {
+  color: #a7a9aa;
 }
 
 .products-container .product h2 {
@@ -161,11 +178,17 @@ a {
 .products-container .product a {
   display: inline-block;
   margin-top: 15px;
-  background: #000;
-  color: orange;
+  background: #24242c;
+  color: #d4980c;
   border-radius: 5px;
   padding: 13px 25px;
   font-weight: 550;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.products-container .product a:hover {
+  background: #7c7e83;
 }
 
 .products-container img {
@@ -180,7 +203,7 @@ a {
 }
 
 .video-container div {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(36, 36, 44, 0.4);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -204,18 +227,24 @@ a {
 }
 
 .video-container div h1 span {
-  color: orange;
+  color: #d4980c;
 }
 
 .video-container div a {
   color: #fff;
-  background: orange;
+  background: #e0ad2f;
   padding: 15px 35px;
   border-radius: 10px;
   border: 2px solid #fff;
   word-spacing: 4px;
   font-weight: 450;
   margin-top: 40px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.video-container div a:hover {
+  background: #e2b84c;
 }
 
 /* DEMO SECTION */
@@ -275,6 +304,10 @@ a {
   margin: 0 auto;
 }
 
+.demo-container .content .info .second-content p {
+  color: #a7a9aa;
+}
+
 .demo-container .content .info h2 {
   margin: 15px 0px 0px 0px;
   font-weight: 550;
@@ -289,7 +322,7 @@ a {
 }
 
 .demo-container .content .info div i {
-  color: orange;
+  color: #e0ad2f;
   margin-right: 10px;
 }
 
@@ -302,9 +335,9 @@ a {
 /* FOOTER SECTION */
 footer {
   width: 100%;
-  background: #000;
+  background: #24242c;
   padding: 20px 0px;
-  color: gray;
+  color: #5c5d61;
 }
 
 footer .content {
@@ -337,6 +370,7 @@ footer .content div .twitter-link {
 footer .content div p {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  color: #5c5d61;
 }
 
 footer .content img {
@@ -406,39 +440,39 @@ footer .content img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    /**/
   }
   .demo-container .content .info {
     width: 100%;
-    /**/
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
-    /**/
   }
   .demo-container .content .info .second-content {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    /**/
     text-align: center;
-    /**/
     width: 100%;
-    /**/
     padding: 0px 15px;
-    /**/
   }
   .demo-container img {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    /**/
     margin: 20px auto;
-    /**/
     width: 100%;
-    /**/
   }
   .demo-container .no-margin {
     margin: 20px auto 0px auto;
+  }
+  /* FOOTER */
+  footer .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .content div {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=EW.css.map */
