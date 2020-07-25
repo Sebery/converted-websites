@@ -1,0 +1,28 @@
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+p,
+a {
+	font-size: 1rem;
+}
+
+/* FONT WEIGHTS */
+$weights: (
+	"regular": 400,
+	"medium": 450,
+	"semibold": 550,
+	"bold": 700,
+);
+
+@function font-w($weight) {
+	@return map-get($weights, $weight);
+}

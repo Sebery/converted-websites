@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/* COLORS OPACITY */
+@mixin bg-opacity($color, $opacity) {
+	background: rgba($color, $opacity);
+}
+
+/* BUTTONS */
+@mixin black-button {
+	color: $white-text-color;
+	background: $primary-dark-color;
+	padding: 15px 35px;
+	border-radius: 10px;
+	border: 2px solid $secondary-white-color;
+	word-spacing: 4px;
+	font-weight: font-w(medium);
+}
+
+@mixin alt-black-button {
+	background: $primary-dark-color;
+	color: $yellow-text-color;
+	border-radius: 5px;
+	padding: 13px 25px;
+	font-weight: font-w(semibold);
+}
+
+@mixin yellow-button {
+	color: $white-text-color;
+	background: $terciary-yellow-color;
+	padding: 15px 35px;
+	border-radius: 10px;
+	border: 2px solid $secondary-white-color;
+	word-spacing: 4px;
+	font-weight: font-w(medium);
+}
+
+/* RESPONSIVE MEDIAS */
+@mixin tablet {
+	@media screen and (max-width: 768px) {
+		@content;
+	}
+}
+
+@mixin mobile {
+	@media screen and (max-width: 600px) {
+		@content;
+	}
+}
+
+@mixin bigger {
+	@media screen and (min-width: 1600px) {
+		@content;
+	}
+}
