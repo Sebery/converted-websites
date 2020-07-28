@@ -1,0 +1,44 @@
+@use '../config';
+
+.quality-container {
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+
+	.image-content {
+		img {
+			width: 100%;
+			max-width: 350px;
+		}
+	}
+
+	.quality-info {
+		margin-top: 40px;
+
+		h4 {
+			@include config.red-title;
+		}
+
+		h2 {
+			@include config.blue-title;
+			margin: 35px 0;
+		}
+
+		p {
+			@include config.pp;
+			width: 90%;
+			padding: 0 10px;
+			margin: 0 auto;
+		}
+
+		.last-p {
+			margin: 35px auto 45px auto;
+		}
+
+		a {
+			@include config.white-button;
+			display: inline-block;
+			@include config.font(Montserrat-f, bold-w, red-color, tiny-s);
+		}
+	}
+}

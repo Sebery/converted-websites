@@ -29,7 +29,7 @@ ul {
 }
 
 @mixin margin-section {
-	margin: 50px 0px;
+	margin: 80px 0px;
 }
 
 @mixin font($family, $weight, $color, $size) {
@@ -63,10 +63,40 @@ ul {
 	padding: 15px 20px 15px 20px;
 }
 
+@mixin white-button {
+	border: 1px solid rgba(226, 84, 71, 0.6);
+	border-radius: 10px;
+	background: variables.$main-white-color;
+	padding: 15px 20px 15px 20px;
+}
+
 /* RESPONSIVE MIXINS */
 
 @mixin desktop {
 	@media screen and (min-width: 1000px) {
 		@content;
 	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: 768px) {
+		@content;
+	}
+}
+
+/* TITLE STYLES */
+@mixin red-title {
+	@include font(Montserrat-f, medium-w, red-color, normal-s);
+}
+
+@mixin blue-title {
+	@include font(Montserrat-f, bold-w, blue-color, big-s);
+}
+
+@mixin pp {
+	@include font(Montserrat-f, regular-w, gray-color, tiny-s);
+}
+
+@mixin subtitle {
+	@include font(Montserrat-f, semibold-w, blue-color, medium-s);
 }

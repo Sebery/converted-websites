@@ -1,5 +1,17 @@
 @use 'main-partials/config';
 @use 'main-partials/page-partials/header-section';
+@use 'main-partials/page-partials/company-logos';
+@use 'main-partials/page-partials/about-section';
+@use 'main-partials/page-partials/comfort-section';
+@use 'main-partials/page-partials/products-section';
+@use 'main-partials/page-partials/quality-section';
+@use 'main-partials/page-partials/customize-section';
 
 /* RESPONSIVE */
 @use 'main-partials/responsive-partials/responsive-header';
+@use 'main-partials/responsive-partials/responsive-company-logos';
+@use 'main-partials/responsive-partials/responsive-about';
+@use 'main-partials/responsive-partials/responsive-comfort-section';
+@use 'main-partials/responsive-partials/responsive-products-section';
+@use 'main-partials/responsive-partials/responsive-quality-section';
+@use 'main-partials/responsive-partials/responsive-customize-section';

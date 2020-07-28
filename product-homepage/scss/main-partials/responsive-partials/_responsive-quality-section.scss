@@ -1,0 +1,30 @@
+@use '../config';
+
+@include config.tablet {
+	body {
+		.quality-container {
+			text-align: left;
+			display: grid;
+			grid-template-rows: 12fr;
+			grid-template-columns: 6fr 6fr;
+			align-items: center;
+
+			.image-content {
+				img {
+					max-width: 550px;
+				}
+			}
+
+			.quality-info {
+				p {
+					padding: 0;
+					margin: 0;
+				}
+
+				.last-p {
+					margin: 35px 0 45px 0;
+				}
+			}
+		}
+	}
+}

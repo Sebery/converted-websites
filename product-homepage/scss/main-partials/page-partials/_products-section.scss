@@ -1,0 +1,62 @@
+@use '../config';
+
+.products-container {
+	@include config.margin-section;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+	a {
+		@include config.white-button;
+		display: inline-block;
+		margin-top: 30px;
+		@include config.font(Montserrat-f, bold-w, red-color, tiny-s);
+	}
+
+	.products-info {
+		h4 {
+			@include config.red-title;
+		}
+
+		h2 {
+			@include config.blue-title;
+			margin: 30px 0;
+		}
+
+		p {
+			@include config.pp;
+			width: 90%;
+			margin: 0 auto;
+		}
+	}
+
+	.content {
+		.item {
+			h3 {
+				@include config.subtitle;
+			}
+
+			img {
+				width: 100%;
+				max-width: 350px;
+			}
+
+			.price {
+				h3 {
+					color: #e25447;
+				}
+			}
+
+			p {
+				@include config.pp;
+				margin: 15px 0;
+				padding: 0 10px;
+			}
+
+			.box-container {
+				margin-top: 15px;
+			}
+		}
+	}
+}

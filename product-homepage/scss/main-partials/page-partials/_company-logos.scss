@@ -1,0 +1,24 @@
+@use '../config';
+
+.company-logos-container {
+	width: 90%;
+	margin: 0 auto;
+	@include config.flex-center;
+	flex-direction: column;
+	text-align: center;
+
+	h3 {
+		@include config.font(Montserrat-f, medium-w, pure-black-color, large-s);
+	}
+
+	div {
+		margin-top: 30px;
+		ul {
+			@include config.flex-center;
+			flex-direction: column;
+			li {
+				margin: 15px 0px;
+			}
+		}
+	}
+}

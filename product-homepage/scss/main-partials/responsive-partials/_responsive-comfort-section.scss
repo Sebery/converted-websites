@@ -1,0 +1,32 @@
+@use '../config';
+
+@include config.tablet {
+	body {
+		.comfort-container {
+			text-align: left;
+			display: grid;
+			grid-template-columns: 6fr 6fr;
+			grid-template-rows: 12fr;
+			align-items: center;
+
+			p {
+				padding: 0;
+				margin: 0 0 40px 0;
+			}
+
+			img {
+				margin-top: 0px;
+				max-width: 500px;
+			}
+
+			.comfort-image {
+				display: flex;
+				justify-content: right;
+			}
+
+			a {
+				display: inline-block;
+			}
+		}
+	}
+}

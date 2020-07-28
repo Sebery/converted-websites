@@ -1,0 +1,35 @@
+@use '../config';
+
+.comfort-container {
+	width: 90%;
+	margin: 0 auto;
+	background: rgba(255, 205, 201, 0.2);
+	text-align: center;
+
+	h4 {
+		@include config.red-title;
+	}
+
+	h2 {
+		@include config.blue-title;
+		margin: 40px 0;
+	}
+
+	p {
+		@include config.pp;
+		padding: 0 10px;
+		width: 90%;
+		margin: 0 auto 80px auto;
+	}
+
+	img {
+		margin-top: 50px;
+		width: 100%;
+		max-width: 400px;
+	}
+
+	a {
+		@include config.white-button;
+		@include config.font(Montserrat-f, bold-w, red-color, tiny-s);
+	}
+}

@@ -1,0 +1,16 @@
+@use '../config';
+
+@include config.tablet {
+	body {
+		.company-logos-container {
+			div {
+				ul {
+					flex-direction: row;
+					li {
+						margin: 0px 15px;
+					}
+				}
+			}
+		}
+	}
+}

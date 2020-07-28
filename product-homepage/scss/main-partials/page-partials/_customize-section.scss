@@ -1,0 +1,46 @@
+@use '../config';
+@use '../typography';
+
+.customize-container {
+	background: map-get(typography.$fc, red-color);
+	width: 90%;
+	@include config.margin-section;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 10px;
+	border-radius: 10px;
+
+	h2 {
+		@include config.font(Montserrat-f, bold-w, white-color, big-s);
+	}
+
+	p {
+		margin-top: 10px;
+		@include config.font(Montserrat-f, regular-w, white-color, tiny-s);
+	}
+
+	a {
+		display: inline-block;
+		margin: 10px 0;
+	}
+
+	.buttons {
+		@include config.flex-center;
+		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	.buttons a:first-child {
+		@include config.white-button;
+		@include config.font(Montserrat-f, bold-w, red-color, tiny-s);
+		padding: 15px 50px 15px 50px;
+		text-align: center;
+	}
+
+	.buttons a:last-child {
+		@include config.red-button;
+		@include config.font(Montserrat-f, bold-w, white-color, tiny-s);
+		border: 1px solid rgb(255, 255, 255, 0.6);
+	}
+}

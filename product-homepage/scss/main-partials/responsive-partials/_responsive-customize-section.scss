@@ -1,0 +1,31 @@
+@use '../config';
+
+@include config.tablet {
+	body {
+		.customize-container {
+			padding: 20px;
+			min-height: 350px;
+			@include config.flex-center;
+			flex-direction: column;
+
+			.info {
+				@include config.flex-center;
+				flex-direction: column;
+			}
+
+			p {
+				width: 80%;
+				margin: 10px auto 0 auto;
+			}
+
+			a {
+				margin: 0 15px;
+			}
+
+			.buttons {
+				flex-direction: row;
+				margin-top: 50px;
+			}
+		}
+	}
+}

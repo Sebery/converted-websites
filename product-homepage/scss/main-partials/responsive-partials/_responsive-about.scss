@@ -1,0 +1,33 @@
+@use '../config';
+
+@include config.tablet {
+	body {
+		.about-container {
+			.about-box {
+				margin-top: 80px;
+				display: grid;
+				grid-template-columns: 6fr 6fr;
+				grid-template-rows: 12fr;
+
+				.box-info {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: 1fr 1fr;
+					align-self: center;
+
+					div {
+						margin: 0 0 80px 0;
+
+						img {
+							min-height: 50px;
+						}
+
+						p {
+							width: 90%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
