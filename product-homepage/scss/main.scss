@@ -6,6 +6,7 @@
 @use 'main-partials/page-partials/products-section';
 @use 'main-partials/page-partials/quality-section';
 @use 'main-partials/page-partials/customize-section';
+@use 'main-partials/page-partials/footer-section';
 
 /* RESPONSIVE */
 @use 'main-partials/responsive-partials/responsive-header';
@@ -15,3 +16,4 @@
 @use 'main-partials/responsive-partials/responsive-products-section';
 @use 'main-partials/responsive-partials/responsive-quality-section';
 @use 'main-partials/responsive-partials/responsive-customize-section';
+@use 'main-partials/responsive-partials/responsive-footer-section';

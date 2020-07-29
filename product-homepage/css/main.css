@@ -58,12 +58,20 @@ img {
   font-weight: 400;
   color: #00000099;
   font-size: 18px;
+  transition: all 2 ease;
+}
+.header-container .header-nav .nav-items-container a:hover {
+  font-size: 20px;
 }
 .header-container .header-nav .nav-items-container li:first-child a {
   font-family: sans-serif;
   font-weight: 600;
   color: #e25447;
   font-size: 18px;
+  transition: all 1 ease;
+}
+.header-container .header-nav .nav-items-container li:first-child a:hover {
+  font-size: 20px;
 }
 .header-container .header-nav .other-info-container {
   margin-top: 10px;
@@ -134,6 +142,11 @@ img {
   background: #e25447;
   border-radius: 10px;
   padding: 15px 20px 15px 20px;
+  transition: all 0.5s ease;
+}
+.header-container .main-container .info-container a:hover {
+  background: #fff;
+  color: #e25447;
 }
 .header-container .main-container .cover-container {
   width: 90%;
@@ -294,10 +307,15 @@ img {
   border-radius: 10px;
   background: #fff;
   padding: 15px 20px 15px 20px;
+  transition: all 0.5s ease;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   color: #e25447;
   font-size: 16px;
+}
+.comfort-container a:hover {
+  background: #e25447;
+  color: #fff;
 }
 
 .products-container {
@@ -312,12 +330,17 @@ img {
   border-radius: 10px;
   background: #fff;
   padding: 15px 20px 15px 20px;
+  transition: all 0.5s ease;
   display: inline-block;
   margin-top: 30px;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   color: #e25447;
   font-size: 16px;
+}
+.products-container a:hover {
+  background: #e25447;
+  color: #fff;
 }
 .products-container .products-info h4 {
   font-family: Montserrat, sans-serif;
@@ -407,11 +430,16 @@ img {
   border-radius: 10px;
   background: #fff;
   padding: 15px 20px 15px 20px;
+  transition: all 0.5s ease;
   display: inline-block;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   color: #e25447;
   font-size: 16px;
+}
+.quality-container .quality-info a:hover {
+  background: #e25447;
+  color: #fff;
 }
 
 .customize-container {
@@ -453,6 +481,7 @@ img {
   border-radius: 10px;
   background: #fff;
   padding: 15px 20px 15px 20px;
+  transition: all 0.5s ease;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   color: #e25447;
@@ -460,15 +489,96 @@ img {
   padding: 15px 50px 15px 50px;
   text-align: center;
 }
+.customize-container .buttons a:first-child:hover {
+  background: #e25447;
+  color: #fff;
+}
 .customize-container .buttons a:last-child {
   background: #e25447;
   border-radius: 10px;
   padding: 15px 20px 15px 20px;
+  transition: all 0.5s ease;
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   color: #fff;
   font-size: 16px;
   border: 1px solid rgba(255, 255, 255, 0.6);
+}
+.customize-container .buttons a:last-child:hover {
+  background: #fff;
+  color: #e25447;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  background: rgba(255, 205, 201, 0.2);
+  text-align: center;
+}
+.footer-container .content .main-info p {
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #505457;
+  font-size: 18px;
+  width: 90%;
+  padding: 10px 0;
+  margin: 20px auto;
+}
+.footer-container .content .main-info img {
+  width: 100%;
+  max-width: 200px;
+  margin: 20px 0;
+}
+.footer-container .content .main-info .social-icons {
+  margin: 40px 0;
+}
+.footer-container .content .main-info .social-icons a {
+  margin: 0 10px;
+}
+.footer-container .content .main-info .social-icons img {
+  width: 100%;
+  max-width: 32px;
+}
+.footer-container .content .other-info .item {
+  margin: 40px 0;
+}
+.footer-container .content .other-info .item h3 {
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #072139;
+  font-size: 20px;
+}
+.footer-container .content .other-info .item a {
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #505457;
+  font-size: 18px;
+}
+.footer-container .content .other-info .item span {
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #e25447;
+  font-size: 18px;
+}
+.footer-container .content .other-info .item h3,
+.footer-container .content .other-info .item ul li {
+  margin: 25px 0;
+}
+.footer-container .content .other-info .last-item ul li p {
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #072139;
+  font-size: 18px;
+}
+.footer-container .content .last-info {
+  border-top: 1px solid rgba(226, 84, 71, 0.3);
+  padding: 15px 0;
+}
+.footer-container .content .last-info p {
+  font-family: sans-serif;
+  font-weight: 400;
+  color: #505457;
+  font-size: 16px;
 }
 
 /* DESKTOP */
@@ -769,6 +879,58 @@ body .header-container .header-nav .other-info-container div {
   body .customize-container .buttons {
     flex-direction: row;
     margin-top: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body .footer-container .content .main-info p {
+    width: 60%;
+  }
+  body .footer-container .content .other-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: left;
+  }
+  body .footer-container .content .other-info .item {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  body .footer-container {
+    text-align: left;
+  }
+  body .footer-container .content {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 1fr 50px;
+    grid-template-areas: "a b" "c c";
+  }
+  body .footer-container .content .main-info {
+    grid-area: a;
+  }
+  body .footer-container .content .main-info p {
+    padding: 0;
+    margin: 20px 0;
+  }
+  body .footer-container .content .main-info .social-icons a:first-child {
+    margin: 0 10px 0 0;
+  }
+  body .footer-container .content .other-info {
+    grid-area: b;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  body .footer-container .content .other-info .item {
+    margin: 0;
+  }
+  body .footer-container .content .other-info .item h3,
+body .footer-container .content .other-info .item ul li {
+    margin: 20px 0;
+  }
+  body .footer-container .content .last-info {
+    grid-area: c;
+    text-align: center;
   }
 }
 /* RESPONSIVE */

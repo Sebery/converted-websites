@@ -27,10 +27,21 @@ img {
 
 			a {
 				@include config.font(Montserrat-f, regular-w, black-color, normal-s);
+				transition: all 2 ease;
+
+				&:hover {
+					font-size: 20px;
+				}
 			}
 
 			li:first-child a {
 				@include config.font(Montserrat-m, semibold-w, red-color, normal-s);
+
+				transition: all 1 ease;
+
+				&:hover {
+					font-size: 20px;
+				}
 			}
 		}
 

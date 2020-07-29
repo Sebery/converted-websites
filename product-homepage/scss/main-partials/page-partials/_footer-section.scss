@@ -1,0 +1,84 @@
+@use '../config';
+
+.footer-container {
+	width: 90%;
+	margin: 0 auto;
+	background: rgba(255, 205, 201, 0.2);
+	text-align: center;
+
+	.content {
+		.main-info {
+			p {
+				@include config.font(Montserrat-m, regular-w, gray-color, normal-s);
+				width: 90%;
+				padding: 10px 0;
+				margin: 20px auto;
+			}
+
+			img {
+				width: 100%;
+				max-width: 200px;
+				margin: 20px 0;
+			}
+
+			.social-icons {
+				margin: 40px 0;
+
+				a {
+					margin: 0 10px;
+				}
+
+				img {
+					width: 100%;
+					max-width: 32px;
+				}
+			}
+		}
+
+		.other-info {
+			.item {
+				margin: 40px 0;
+
+				h3 {
+					@include config.font(Montserrat-m, semibold-w, blue-color, medium-s);
+				}
+
+				a {
+					@include config.font(Montserrat-m, regular-w, gray-color, normal-s);
+				}
+
+				span {
+					@include config.font(Montserrat-m, regular-w, red-color, normal-s);
+				}
+
+				h3,
+				ul li {
+					margin: 25px 0;
+				}
+			}
+
+			.last-item {
+				ul {
+					li {
+						p {
+							@include config.font(
+								Montserrat-m,
+								medium-w,
+								blue-color,
+								normal-s
+							);
+						}
+					}
+				}
+			}
+		}
+
+		.last-info {
+			border-top: 1px solid rgba(226, 84, 71, 0.3);
+			padding: 15px 0;
+			p {
+				@include config.font(Montserrat-m, regular-w, gray-color, tiny-s);
+			}
+		}
+	}
+}
